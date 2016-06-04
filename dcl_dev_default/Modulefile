@@ -1,0 +1,9 @@
+name    'dcl_dev_default'
+version '1.0.0'
+source 'DCL'
+author 'DCL <sysadmin@digitalcraftsmen.net>'
+license 'N/A'
+summary 'Defaults'
+description 'Dev Environment Defaults'
+project_page 'https://github.com/DigitalCraftsmen/dev-puppet-modules'
+

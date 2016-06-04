@@ -1,0 +1,15 @@
+{
+  "name": "dcl_dev_default",
+  "version": "1.0.0",
+  "source": "DCL",
+  "author": "DCL <sysadmin@digitalcraftsmen.net>",
+  "summary": "defaults",
+  "description": "Environment Defaults",
+  "project_page": "https://github.com/DigitalCraftsmen/dev-puppet-modules",
+  "dependencies": [
+	
+  ],
+  "types": [
+
+  ],
+}
