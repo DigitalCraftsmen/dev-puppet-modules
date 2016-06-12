@@ -17,7 +17,7 @@ class dcl_dev_default () inherits dcl_dev_default::params
 	  remote_servers => [
 		{
 		  host => '10.100.2.252',
-		  port => '514',
+		  port => '2514',
 		  protocol  => 'udp',
 		},
 	  ]
