@@ -1,0 +1,17 @@
+{
+  "LICENSE": "0067eb40022ac4129830959b9d4ab264",
+  "README.md": "fb2e164415b6623fd74016adcebf6f45",
+  "manifests/init.pp": "f0542fc248689921aef4407498a51115",
+  "manifests/params.pp": "2847febc86ff228deb19b6cdeef774f1",
+  "manifests/php_fpm.pp": "b72e385562120db276716da1a8649d25",
+  "metadata.json": "5c08ba4af801f6405d92c325fccb2fac",
+  "templates/php.ini.c.6.erb": "e16a7f8c881f02bd6769a1e3f7a92480",
+  "templates/php.ini.c.7.erb": "e16a7f8c881f02bd6769a1e3f7a92480",
+  "templates/php.ini.u.12.erb": "e747b2340c6cba62ba9f85490466056a",
+  "templates/php.ini.u.14.erb": "ba4ed4ce79f5a73e05b94409afbda909",
+  "templates/php.ini.u.16.erb": "4b1c2e5807f008391f25910aa40cf1ec",
+  "templates/www.conf.c.erb": "575cf61078e4fa8efcf880aacbc5e944",
+  "templates/www.conf.u.12.erb": "5e0e700779a979d6415a2c657bb3b666",
+  "templates/www.conf.u.14.erb": "2c7ecf462550f71026f1249133f1d352",
+  "templates/www.conf.u.16.erb": "0b80ca2be6d1a95192cd11278acf2b9a"
+}
