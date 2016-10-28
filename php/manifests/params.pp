@@ -1,7 +1,7 @@
 class php::params {
   if $::osfamily == 'Redhat' {
-    $package_name = [ 'php', 'php-mcrypt' ]
-    $package_name_fpm = [ 'php-fpm', 'php-mcrypt' ]
+    $package_name = [ 'php', 'php-mcrypt', 'php-mysql' ]
+    $package_name_fpm = [ 'php-fpm', 'php-mcrypt', 'php-mysql' ]
     $configfile = '/etc/php.ini'
     $configfile_fpm = '/etc/php.ini'
     $configfile_www = '/etc/php-fpm.d/www.conf'
@@ -22,7 +22,7 @@ class php::params {
     case $::operatingsystemrelease {
       /^12.*/: {
         $package_name = [ 'php5', 'php5-mcrypt', 'libapache2-mod-php5', 'php5-mysql' ]
-        $package_name_fpm = [ 'php5-fpm', 'php5-mcrypt' ]
+        $package_name_fpm = [ 'php5-fpm', 'php5-mcrypt', 'php5-mysql' ]
         $configfile = '/etc/php5/apache2/php.ini'
         $configfile_fpm = '/etc/php5/fpm/php.ini'
         $configfile_www = '/etc/php5/fpm/pool.d/www.conf'
@@ -31,7 +31,7 @@ class php::params {
       }
       /^14.*/: {
         $package_name = [ 'php5', 'php5-mcrypt', 'libapache2-mod-php5', 'php5-mysql' ]
-        $package_name_fpm = [ 'php5-fpm', 'php5-mcrypt' ]
+        $package_name_fpm = [ 'php5-fpm', 'php5-mcrypt', 'php5-mysql' ]
         $configfile = '/etc/php5/apache2/php.ini'
         $configfile_fpm = '/etc/php5/fpm/php.ini'
         $configfile_www = '/etc/php5/fpm/pool.d/www.conf'
@@ -40,7 +40,7 @@ class php::params {
       }
       /^16.*/: {
         $package_name = [ 'php', 'php-mcrypt', 'libapache2-mod-php', 'php5-mysql' ]
-        $package_name_fpm = [ 'php-fpm', 'php-mcrypt' ]
+        $package_name_fpm = [ 'php-fpm', 'php-mcrypt', 'php5-mysql' ]
         $configfile = '/etc/php/7.0/apache2/php.ini'
         $configfile_fpm = '/etc/php/7.0/fpm/php.ini'
         $configfile_www = '/etc/php/7.0/fpm/pool.d/www.conf'
@@ -49,7 +49,7 @@ class php::params {
       }
       default: {
         $package_name = [ 'php5', 'php5-mcrypt', 'libapache2-mod-php5', 'php5-mysql' ]
-        $package_name_fpm = [ 'php5-fpm', 'php5-mcrypt' ]
+        $package_name_fpm = [ 'php5-fpm', 'php5-mcrypt', 'php5-mysql' ]
         $configfile = '/etc/php5/apache2/php.ini'
         $configfile_fpm = '/etc/php5/fpm/php.ini'
         $configfile_www = '/etc/php5/fpm/pool.d/www.conf'
