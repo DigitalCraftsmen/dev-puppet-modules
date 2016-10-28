@@ -21,7 +21,7 @@ class php::params {
   if $::osfamily == 'Debian' {
     case $::operatingsystemrelease {
       /^12.*/: {
-        $package_name = [ 'php5', 'php5-mcrypt', 'libapache2-mod-php5' ]
+        $package_name = [ 'php5', 'php5-mcrypt', 'libapache2-mod-php5', 'php5-mysql' ]
         $package_name_fpm = [ 'php5-fpm', 'php5-mcrypt' ]
         $configfile = '/etc/php5/apache2/php.ini'
         $configfile_fpm = '/etc/php5/fpm/php.ini'
@@ -30,7 +30,7 @@ class php::params {
         $template_www = 'php/www.conf.u.12.erb'
       }
       /^14.*/: {
-        $package_name = [ 'php5', 'php5-mcrypt', 'libapache2-mod-php5' ]
+        $package_name = [ 'php5', 'php5-mcrypt', 'libapache2-mod-php5', 'php5-mysql' ]
         $package_name_fpm = [ 'php5-fpm', 'php5-mcrypt' ]
         $configfile = '/etc/php5/apache2/php.ini'
         $configfile_fpm = '/etc/php5/fpm/php.ini'
@@ -39,7 +39,7 @@ class php::params {
         $template_www = 'php/www.conf.u.14.erb'
       }
       /^16.*/: {
-        $package_name = [ 'php', 'php-mcrypt', 'libapache2-mod-php' ]
+        $package_name = [ 'php', 'php-mcrypt', 'libapache2-mod-php', 'php5-mysql' ]
         $package_name_fpm = [ 'php-fpm', 'php-mcrypt' ]
         $configfile = '/etc/php/7.0/apache2/php.ini'
         $configfile_fpm = '/etc/php/7.0/fpm/php.ini'
@@ -48,7 +48,7 @@ class php::params {
         $template_www = 'php/www.conf.u.16.erb'
       }
       default: {
-        $package_name = [ 'php5', 'php5-mcrypt', 'libapache2-mod-php5' ]
+        $package_name = [ 'php5', 'php5-mcrypt', 'libapache2-mod-php5', 'php5-mysql' ]
         $package_name_fpm = [ 'php5-fpm', 'php5-mcrypt' ]
         $configfile = '/etc/php5/apache2/php.ini'
         $configfile_fpm = '/etc/php5/fpm/php.ini'
